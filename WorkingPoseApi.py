@@ -98,7 +98,7 @@ def gen():
            
             
             
-@app.route('/api',methods=['GET'])
+@app.route('/',methods=['GET'])
 def video_feed():
     return Response(gen(),mimetype ='multipart/x-mixed-replace; boundary=frame')
 
